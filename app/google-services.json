@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "254592755968",
+    "project_id": "projetindavas",
+    "storage_bucket": "projetindavas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254592755968:android:f27e1a02c3d52ef679abe5",
+        "android_client_info": {
+          "package_name": "com.example.projetindavas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254592755968-0qomnc0spphr4g120t9ev47b6abjd7no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsE9jSzibGUUCMtm4mVx3afIyCxKrjpSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254592755968-0qomnc0spphr4g120t9ev47b6abjd7no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254592755968:android:f532ea1502a0b7b779abe5",
+        "android_client_info": {
+          "package_name": "com.example.prrojetindavas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254592755968-0qomnc0spphr4g120t9ev47b6abjd7no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsE9jSzibGUUCMtm4mVx3afIyCxKrjpSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254592755968-0qomnc0spphr4g120t9ev47b6abjd7no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
