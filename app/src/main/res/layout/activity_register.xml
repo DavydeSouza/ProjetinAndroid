@@ -15,14 +15,36 @@
         android:text="Criar Conta"
         android:textColor="@color/white"
         android:textSize="40sp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="80dp"
         android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/edit_nomeR"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:id="@+id/edit_sNomeR"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Sobrenome"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
         />
     <EditText
         android:id="@+id/edit_emailR"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:hint="E-mail"
+        android:layout_marginTop="10dp"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"

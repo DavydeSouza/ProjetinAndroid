@@ -17,6 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.prrojetindavas.MainActivity;
+import com.example.prrojetindavas.Model.UserModel;
 import com.example.prrojetindavas.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -25,6 +26,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
 
+    private EditText edit_nomeR;
+    private EditText edit_sNomeR;
+    private EditText sNomeR;
     private EditText edit_emailR;
     private EditText edit_passwordR;
     private EditText edit_CpasswordR;
@@ -39,6 +43,8 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         mAuth = FirebaseAuth.getInstance();
+        edit_nomeR = findViewById(R.id.edit_nomeR);
+        edit_sNomeR = findViewById(R.id.edit_sNomeR);
         edit_emailR = findViewById(R.id.edit_emailR);
         edit_passwordR = findViewById(R.id.edit_passwordR);
         edit_CpasswordR = findViewById(R.id.edit_CpasswordR);
@@ -63,17 +69,24 @@ public class Register extends AppCompatActivity {
         btn_cregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String registrarEmail = edit_emailR.getText().toString();
+
+                UserModel userModel = new UserModel();
+
+                userModel.setNome(edit_nomeR.getText().toString());
+                userModel.setSobrenome(edit_sNomeR.getText().toString());
+                userModel.setEmail(edit_emailR.getText().toString());
                 String senha = edit_passwordR.getText().toString();
                 String cSenha = edit_CpasswordR.getText().toString();
 
-                if(!TextUtils.isEmpty(registrarEmail) ||!TextUtils.isEmpty(senha) ||!TextUtils.isEmpty(cSenha)){
+                if(!TextUtils.isEmpty(userModel.getNome()) || !TextUtils.isEmpty(userModel.getSobrenome()) || !TextUtils.isEmpty(userModel.getEmail()) ||!TextUtils.isEmpty(senha) ||!TextUtils.isEmpty(cSenha)){
                     if(senha.equals(cSenha)){
                         loding_loginR.setVisibility(View.VISIBLE);
-                        mAuth.createUserWithEmailAndPassword(registrarEmail,senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        mAuth.createUserWithEmailAndPassword(userModel.getEmail(),senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
+                                    userModel.setId(mAuth.getUid());
+                                    userModel.Save();
                                     abrirTelaPrincipal();
                                 }else{
                                     String error = task.getException().getMessage();
