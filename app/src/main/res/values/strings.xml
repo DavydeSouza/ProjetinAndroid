@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">PrrojetinDAVAS</string>
+    <string name="menu_principal">Principal </string>
+    <string name="menu_pagamento">Pagamentos </string>
+    <string name="menu_exit">Sair</string>
 </resources>

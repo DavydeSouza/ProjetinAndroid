@@ -76,8 +76,7 @@
         android:indeterminateTint="@color/white"
         android:indeterminate="true"
         android:visibility="invisible"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_marginTop="20dp"/>
 
 
 
