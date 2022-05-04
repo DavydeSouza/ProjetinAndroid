@@ -1,2 +1,2 @@
-# ProjetinAndroid
-me desafiando a fazer um app com firebase e Android Studio JAVA
+# LittleprojectDavas
+challenging me to make an app with firebase and Android Studio JAVA
