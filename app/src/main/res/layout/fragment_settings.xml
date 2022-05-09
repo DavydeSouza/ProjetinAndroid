@@ -4,9 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.HomeFragment">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Settings" />
 
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:background="@color/start"
+        android:text="Logout"
+        android:textColor="@color/mind" />
 </FrameLayout>

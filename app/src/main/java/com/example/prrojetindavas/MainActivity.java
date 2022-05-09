@@ -19,7 +19,6 @@ import com.example.prrojetindavas.Activity.Login;
 import com.example.prrojetindavas.Fragments.HomeFragment;
 import com.example.prrojetindavas.Fragments.PaymentsFragment;
 import com.example.prrojetindavas.Fragments.SettingsFragment;
-import com.example.prrojetindavas.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
     PaymentsFragment paymentsFragment = new PaymentsFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
 
-    private FirebaseAuth mAuth;
-    private Button btn_logout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
-        mAuth =FirebaseAuth.getInstance();
-        btn_logout = findViewById(R.id.btn_logout);
 
         bottom_navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -65,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_logout.setOnClickListener(new View.OnClickListener() {
+    /* btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
@@ -74,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        });
-
+        });*/
     }
     @Override
     protected  void onStart(){
