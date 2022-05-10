@@ -11,5 +11,6 @@
         android:layout_height="51dp"
         android:background="@color/start"
         android:text="Logout"
-        android:textColor="@color/mind" />
+        android:textColor="@color/mind"
+        android:layout_gravity="center"/>
 </FrameLayout>

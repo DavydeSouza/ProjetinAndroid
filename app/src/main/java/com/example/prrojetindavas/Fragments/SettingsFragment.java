@@ -33,7 +33,9 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
-                Toast.makeText(getContext(), "Precionou", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), Login.class);
+                Toast.makeText(getContext(), "Obrigado por usar o Sistema", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
             }
         });
         return view;
