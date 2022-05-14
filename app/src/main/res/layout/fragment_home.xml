@@ -3,13 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Fragments.HomeFragment">
 
-    <TextView
+    <View
+        android:id="@+id/containerUser"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/container_user"
+    />
+    <ImageView
+        android:id="@+id/ft_perfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_user"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="155dp"
+        />
+   <View
+        android:id="@+id/containerText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home"
-        android:textSize="50dp"
-        android:layout_gravity="center"/>
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/container_user"
+        />
+    <TextView
+        android:layout_width="500dp"
+        android:textSize="30dp"
+        android:text="Bem vindo ao Sitema!!"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="195dp"
+        />
 
+    <TextView
+        android:id="@+id/nameUser"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="245dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
 </FrameLayout>

@@ -74,9 +74,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/loding_login"
         android:indeterminateTint="@color/white"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:indeterminate="true"
         android:visibility="invisible"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        />
 
 
 

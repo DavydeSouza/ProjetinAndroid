@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Fragments.HomeFragment">
 
     <Button
@@ -12,5 +13,6 @@
         android:background="@color/start"
         android:text="Logout"
         android:textColor="@color/mind"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        />
 </FrameLayout>
