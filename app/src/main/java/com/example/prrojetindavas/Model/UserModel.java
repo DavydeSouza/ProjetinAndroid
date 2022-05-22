@@ -32,7 +32,6 @@ public class UserModel {
         this.sobrenome = sobrenome;
         this.email = email;
     }
-
     @Exclude
     public String getId() {
         return id;
@@ -65,6 +64,8 @@ public class UserModel {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
     public void Save(){
         UserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         FirebaseFirestore db = FirebaseFirestore.getInstance();

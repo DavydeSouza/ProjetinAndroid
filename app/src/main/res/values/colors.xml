@@ -8,8 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="start">#ED217C</color>
-    <color name="mind">#FFFD82</color>
+    <color name="start">#30F804</color>
+    <color name="mind">#1A7700</color>
+    <color name="hint">#595656</color>
+    <color name="end">#FFFFFF</color>
     <color name="font">#2d3047</color>
 
 </resources>

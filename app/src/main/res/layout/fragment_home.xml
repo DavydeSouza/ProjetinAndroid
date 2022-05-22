@@ -22,13 +22,6 @@
         android:layout_marginTop="55dp"
         android:layout_marginLeft="155dp"
         />
-   <View
-        android:id="@+id/containerText"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/container_user"
-        />
     <TextView
         android:layout_width="500dp"
         android:textSize="30dp"
@@ -36,6 +29,7 @@
         android:layout_height="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="195dp"
+        android:textColor="@color/font"
         />
 
     <TextView
@@ -44,6 +38,15 @@
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="245dp"
-        android:textColor="@android:color/black"
+        android:text="Cliente"
+        android:textColor="@color/font"
         android:textSize="30dp" />
+    <ImageView
+        android:id="@+id/name_perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_person"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="50dp"
+        />
 </FrameLayout>
