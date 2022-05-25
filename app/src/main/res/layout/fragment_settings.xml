@@ -10,9 +10,9 @@
         android:id="@+id/btn_exit"
         android:layout_width="235dp"
         android:layout_height="51dp"
-        android:background="@color/start"
+        android:background="@color/font"
         android:text="Logout"
-        android:textColor="@color/mind"
+        android:textColor="@color/start"
         android:layout_gravity="center"
         />
 </FrameLayout>
