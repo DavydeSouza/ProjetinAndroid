@@ -22,6 +22,34 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_add" />
+
+ <!--   <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddpayments1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="@color/font"
+        android:contentDescription="ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddpayments"
+        app:srcCompat="@drawable/ic_add"
+        android:visibility="invisible"/>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddpayments2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#08FF00"
+        android:contentDescription="ADD"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddpayments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_2"
+        android:visibility="invisible"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
